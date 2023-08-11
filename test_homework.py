@@ -1,5 +1,4 @@
-import math
-
+import math, random
 
 def test_greeting():
     """
@@ -52,7 +51,9 @@ def test_random_list():
     """
 
     # TODO создайте список
-    l = [3, 9, 13, 15, 16, 20, 25, 26, 31, 86]
+    l = random.sample(range(1, 100), 10)
+    l.sort()
+    print(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
